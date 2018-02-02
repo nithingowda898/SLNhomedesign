@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Affordable and professional web design">
+		<meta name="keywords" content="web design, affordable web design, professional web design">
+		<meta name="author" content="Brad Traversy">
+		<title>Pictuers</title>
+		<link rel="stylesheet" href="style.css">
+		
+		<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style>
+body{
+	font: 15px/1.5 Arial, Helvetico,sans-serif;
+	padding:0;
+	margin:0;
+	background-color:white;
+}
+
+	/* Global */
+.container{
+	width:80%;
+	margin:auto;
+	over-flow:hidden;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+
+.button_1{
+	height:38px;
+	background:#e8491d;
+	border:0;
+	padding_left: 20px;
+	padding_right:20px;
+	color:#ffffff;
+}
+
+	/* Header **/
+header{
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:75px;
+	border-bottom:#e8491d 3px solid;
+	width: 183%;
+}
+header a{
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
+}
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+header #branding{
+	float:left;
+}
+header #branding h1{
+	margin:0;
+}
+header nav{
+	float:right;
+	margin-top:10px;
+}
+header .highlight, header .current a{
+	color:#e8491d;
+	font-weight:bold;
+}
+header a:hover{
+	color:#cccccc;
+	font-weight:bold;
+}
+#service1{
+	background: #35424a;
+	width: 170px;
+	height: 60px;
+	line-height:60px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	color: white;
+	font-weight: 100;
+	box-shadow: 1px 10px 2px 2px black;
+}
+
+#service1 a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+/* Showcase */
+#showcase{
+	min-height:600px;
+	background:url('http://wallpapers-hd-wide.com/wp-content/uploads/2015/10/Beautiful-small-city-near-water-at-sunset-wallpaper-1920x1080.jpg') no-repeat;
+	text-align:center;
+	color:white;
+	width: 183%;
+}
+#showcase h1{
+	margin-top:50px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+#showcase p{
+	font-size:20px;
+}
+
+#newsletter{
+	padding:15px;
+	color:#ffffff;
+	background:#35424a;
+	height:60px;
+	width:174.7%;
+}
+#newsletter h1{
+	float:left;
+}
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+#newsletter input[type="email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+	border-radius: 25px;
+}
+
+
+/* Boxes */
+#boxes{
+	margin-top:20px;
+}
+#boxes .box{
+	float:left;
+	width:30%;
+	text-align:center;
+	padding:20px;
+}
+
+
+#boxes .box1{
+	float:left;
+	width:30%;
+	text-align:center;
+	padding:20px;
+}
+#boxes .box img{
+	width:190px;
+}
+footer{
+	padding:20px;
+	margin-top:30px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+	width: 172%;
+}
+
+.responsive-bar{
+	width: 100%;
+	background: #35424a;
+	padding: 10px 30px;
+	box-sizing: border-box;
+	display: none;
+	
+}
+.responsive-bar h3{
+	margin: 0;
+	padding: 3px 0;
+	color: #fff;
+	float: left;
+}
+.responsive-bar h3 a{
+	color: #fff;
+	text-decoration: none;
+}
+.responsive-bar h4{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	float: right;
+	padding: 5px 10px;
+	background: #e8491d;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+@media (max-width: 900px)
+{
+	nav
+	{
+		display: none;
+		padding: 0;
+	}
+	.responsive-bar
+	{
+		display: block;
+	}
+	nav h1
+	{
+		display: block;
+		float: none;
+	}
+	nav ul
+	{
+		float: none;
+	}
+	nav ul li
+	{
+		display: block;
+		text-align: center;
+		background: #35424a;
+		padding: 15px 20px;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+	}
+	#service1{
+	background: #35424a;
+	width: 170px;
+	height: 60px;
+	line-height:60px;
+	margin-left: 70%;
+	margin-right: auto;
+	border-radius: 5px;
+	color: white;
+	font-weight: 100;
+	box-shadow: 1px 10px 2px 2px black;
+}
+
+#service1 a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+	h1.brand
+	{
+		display: none;
+	}
+#service2{
+	background: #35424a;
+	width: 170px;
+	height: 60px;
+	line-height:60px;
+	margin-right: 70%;
+	margin-top: -71%;
+	border-radius: 5px;
+	color: white;
+	font-weight: 100;
+	box-shadow: 1px 10px 2px 2px black;
+	
+}
+
+#service2 a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+	h1.brand
+	{
+		display: none;
+	}
+	#service3{
+	background: #35424a;
+	width: 170px;
+	height: 60px;
+	line-height:60px;
+	margin-right: 70%;
+	margin-top: 2%;
+	border-radius: 5px;
+	color: white;
+	font-weight: 100;
+	box-shadow: 1px 10px 2px 2px black;
+	
+}
+
+#service3 a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+	h1.brand
+	{
+		display: none;
+	}
+
+}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Scorpion</span> Informer</h1>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="home.html"><span class="highlight">Ho</span>me</a></li>
+						<li><a href="Pictures.html">  <span class="highlight">Pict</span>uers</a></li>
+						<li><a href="Contact Us.html"><span class="highlight">Cont</span>act</a></li>
+						<li><i class="fa fa-service"></i>     <a href="Service.html">Service</a></li>
+						<li><a href="About.html"><span class="highlight">Abo</span>ut</a></li>
+						</ul>
+					<div style="clear: both"></div>
+				</nav>
+				<div class="responsive-bar">
+			<h3 class="brand"><a href="#"></a></h3>
+			<h4 class="menu">Menu</h4>
+			<div style="clear: both"></div>
+		</div>
+			</div>
+		</header>
+
+		<section id="showcase">
+			<div class="container">
+				<br><br>
+				<div id="nav3">
+		<div id="service1">
+			<h3><a href="Exterior Pictures.html"><i class="fa fa-linkden"></i>  Linkden</a></h3>
+		</div>
+			<br>
+		<div id="service1">
+			<h3><a href="Interior Pictuers.html"><i class="fa fa-hike"></i>  Hike</a></h3>
+		</div><br>
+			<div id="service1">
+			<h3><a href="Interior Pictuers.html"><i class="fa fa-whatsapp"></i>  Whatsapp</a></h3>
+		</div><br>
+		<div id="service1">
+			<h3><a href="Interior Pictuers.html"><i class="fa fa-facebook"></i>    Facebook</a></h3>
+		</div>
+<div id="service2">
+<h3><a href="Exterior Pictures.html"><i class="fa fa-youtube"></i>    YouTube</a></h3>
+		</div>
+			<br>
+		<div id="service3">
+			<h3><a href="Interior Pictuers.html"><i class="fa fa-Google"></i>  Gmail Id</a></h3>
+		</div><br>
+			<div id="service3">
+			<h3><a href="Interior Pictuers.html"><i class="fa fa-instagram"></i>   Instagram</a></h3>
+		</div><br>
+		<div id="service3">
+			<h3><a href="Interior Pictuers.html"><i class="fa fa-twitter"></i>   Twitter</a></h3>
+		</div>
+
+
+
+
+
+
+
+
+			</div>
+		</section>
+		<section id="newsletter">
+			<div class="container">
+				<h1>Subscribe</h1>
+				<form>
+					<input type="email" placeholder="Enter Email...">
+					<button type="submit" class="button_1">Subscribe</button>
+				</form>
+			</div>
+		</section>
+
+		<footer><p>&copy; All right reserved_______Created By Nithin Gowda</p></footer>
+	
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".menu").click(function(){
+					$("nav").slideToggle(500);
+			})
+		})
+		</script>	
+</body>
+</html>
+
+
+
+
+
+
+
+
