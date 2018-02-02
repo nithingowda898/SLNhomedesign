@@ -1,51 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<meta name="description" content="Affordable and professional web design">
 		<meta name="keywords" content="web design, affordable web design, professional web design">
 		<meta name="author" content="Brad Traversy">
-		<title>Scorpion Informer</title>
+		<title>Pictuers</title>
 		<link rel="stylesheet" href="style.css">
-
-
-<style type="text/css">
-
-	body,h1{
-		margin: 0;
-		padding: 0;
-		font-family: TIMES NEW ROMAN;
-		background-color: #35424a;
+		<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		
+		<style>
+body{
+	font: 14px/1.5 Times new roman, Helvetico,sans-serif;
+	padding:0;
+	margin:0;
+	background-color: white;
 }
-	
 
-	.text-container h1{
-		font-size: 40px;
-		color: rgba(225,225,225,.1);
-		background-image: url('https://scontent.fblr4-1.fna.fbcdn.net/v/t31.0-8/fr/cp0/e15/q65/26841210_1333330583433416_8763210806307672341_o.jpg?efg=eyJpIjoiYiJ9&oh=5325357e1b7397c4c4e09646c255ee67&oe=5AE3E854');
-		background-size: cover;
-		background-repeat: repeat-x;
-		-webkit-background-clip:text;
-		animation: animate 15s linear infinite;
-}
-	@keyframes animate{
-	0%{
-		background-position: left 0px top 10px;
-	}
-	40%{
-		background-position: left 800px top 10px;
-	}
-}
 	/* Global */
 .container{
-	width: auto;
+	width:80%;
 	margin:auto;
 	over-flow:hidden;
 }
 ul{
 	margin:0;
 	padding:0;
+}
+
+.button_1{
+	height:38px;
+	background:#e8491d;
+	border:0;
+	padding_left: 20px;
+	padding_right:20px;
+	color:#ffffff;
 }
 
 	/* Header **/
@@ -55,9 +47,7 @@ header{
 	padding-top:30px;
 	min-height:75px;
 	border-bottom:#e8491d 3px solid;
-	width: 150%;
-
-	padding-left: 25px;
+	width: 193%;
 }
 header a{
 	color:#ffffff;
@@ -66,7 +56,7 @@ header a{
 	font-size:16px;
 }
 header li{
-	float: left;
+	float:left;
 	display:inline;
 	padding: 0 20px 0 20px;
 }
@@ -87,6 +77,92 @@ header .highlight, header .current a{
 header a:hover{
 	color:#cccccc;
 	font-weight:bold;
+}
+#service1{
+	background: #35424a;
+	width: 170px;
+	height: 60px;
+	line-height:60px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	color: white;
+	font-weight: 100;
+	box-shadow: 1px 10px 2px 2px black;
+}
+
+#service1 a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+/* Showcase */
+#showcase{
+	min-height:830px;
+	background:url('http://wallpapers-hd-wide.com/wp-content/uploads/2015/10/Beautiful-small-city-near-water-at-sunset-wallpaper-1920x1080.jpg') no-repeat;
+	text-align:center;
+	color:white;
+	width: 193.1%;
+}
+#showcase h1{
+	margin-top:50px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+#showcase p{
+	font-size:20px;
+}
+
+#newsletter{
+	padding:15px;
+	color:#ffffff;
+	background:#35424a;
+	height:60px;
+	width:174.7%;
+}
+#newsletter h1{
+	float:left;
+}
+#newsletter form{
+	float:right;
+	margin-top:15px;
+}
+#newsletter input[type="email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+	border-radius: 25px;
+}
+
+
+/* Boxes */
+#boxes{
+	margin-top:20px;
+}
+#boxes .box{
+	float:left;
+	width:30%;
+	text-align:center;
+	padding:20px;
+}
+
+
+#boxes .box1{
+	float:left;
+	width:30%;
+	text-align:center;
+	padding:20px;
+}
+#boxes .box img{
+	width:190px;
+}
+footer{
+	padding:20px;
+	margin-top:30px;
+	color:#ffffff;
+	background-color:#e8491d;
+	text-align:center;
+	width: 182%;
 }
 
 .responsive-bar{
@@ -111,30 +187,81 @@ header a:hover{
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	float: left;
+	float: right;
 	padding: 5px 10px;
 	background: #e8491d;
 	text-transform: uppercase;
 	cursor: pointer;
 }
-.text-container{
-		margin-top: 80%;
+
+@media (max-width: 900px)
+{
+	nav
+	{
+		display: none;
+		padding: 0;
+	}
+	.responsive-bar
+	{
+		display: block;
+	}
+	nav h1
+	{
+		display: block;
+		float: none;
+	}
+	nav ul
+	{
+		float: none;
+	}
+	nav ul li
+	{
+		display: block;
 		text-align: center;
-		width: 160%;
+		background: #35424a;
+		padding: 15px 20px;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+	}
+	#service1{
+	background: #35424a;
+	width: 170px;
+	height: 60px;
+	line-height:60px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	color: white;
+	font-weight: 100;
+	box-shadow: 1px 10px 2px 2px black;
 }
-</style>
-</head>
-<body>
-	<header>
+
+#service1 a{
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+	h1.brand
+	{
+		display: none;
+	}
+
+}
+		</style>
+	</head>
+	<body>
+		<header>
 			<div class="container">
+				<div id="branding">
+					<h1><span class="highlight">Scorpion</span> Informer</h1>
+				</div>
 				<nav>
 					<ul>
 						<li><a href="home.html"><span class="highlight">Ho</span>me</a></li>
-						<li><a href="Pictuers.html"><span class="highlight">Pict</span>uers</a></li>
-						<li><a href="Contact us.html"><span class="highlight">Cont</span>act</a></li>
+						<li><a href="Pictuers.html"><i class="fa fa-image"></i>  Pictuers</a></li>
+						<li><a href="Contact Us .html"><span class="highlight">Cont</span>act</a></li>
 						<li><a href="Service.html"><span class="highlight">Ser</span>vice</a></li>
 						<li><a href="About.html"><span class="highlight">Abo</span>ut</a></li>
-					</ul>
+						</ul>
 					<div style="clear: both"></div>
 				</nav>
 				<div class="responsive-bar">
@@ -144,9 +271,48 @@ header a:hover{
 		</div>
 			</div>
 		</header>
-				
-		<div class="text-container">
-		<h1>S.L.N HOME DESIGNS & CONSTRUCTIONS</h1>
+
+		<section id="showcase">
+			<div class="container"><br><br><br><br>
+			<br><br><br><br><br><br>
+				<div id="nav3">
+		<div id="service1">
+			<h3><a href="Exterior Pictures.html">Exterior Pictures</a></h3>
 		</div>
+			<br>
+		<div id="service1">
+			<h3><a href="Interior Pictuers.html">Interior Pictures</a></h3>
+		</div>
+
+
+
+
+
+
+
+
+
+			</div>
+		</section>
+		
+
+		<footer><p>&copy; All right reserved_______Created By Nithin Gowda</p></footer>
+	
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".menu").click(function(){
+					$("nav").slideToggle(500);
+			})
+		})
+		</script>	
 </body>
 </html>
+
+
+
+
+
+
+
+
